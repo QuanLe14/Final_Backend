@@ -24,4 +24,5 @@ connection.once('open', () => {
 const router = require('./routes/routes');
 
 // adding /books to before all routes
+//run this in thunder client http://localhost:5000/book
 app.use('/book', router);
