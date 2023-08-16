@@ -10,6 +10,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+//Connecting to MongoDb Atlas Cloud
 const uri = "mongodb+srv://bookuser1:book123@cluster0.yb2jpwb.mongodb.net/BookDB?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true,  useUnifiedTopology: true   }
 );
